@@ -1,1 +1,27 @@
-/home/mark/.zaliases
+alias ytdl-rip='youtube-dl --extract-audio --audio-format mp3'
+alias ls='ls --color=auto'
+alias ll='ls -la --color=auto'
+alias pacman='pacman --color always'
+alias htop='htop -d 10'
+alias pacaur='pacaur --color always'
+alias musicbot='/home/mark/musicbot/run.sh'
+alias pia='/opt/pia/run.sh'
+alias feh='feh -d'
+
+pb() {
+	if [ -z "$1" ]; then	
+		_pb_base
+	else
+		_pb_code "$1"
+	fi
+}
+
+_pb_base() {
+	curl -F c=@- 'https://ptpb.pw/?u=1'
+}
+
+_pb_code() {
+	link=$(cat $1 | _pb_base)
+	extension=$(echo $1 | grep -Eo '\.([a-zA-Z]*$)' | cut -c 2-)
+	echo "${link}/${extension}"
+}
