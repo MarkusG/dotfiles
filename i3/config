@@ -282,6 +282,9 @@ bar {
 	tray_output $maindisp
 	status_command i3blocks
 	colors {
-		background #000000
+		background			#002B36
+		focused_workspace	#657b83 #002B36 #93a1a1
+		active_workspace	#002B36 #002B36 #93a1a1
+		inactive_workspace	#002B36 #002B36 #93a1a1
 	}
 }
