@@ -41,6 +41,13 @@ markup=none
 #interval=1
 #signal=10
 
+# Weather
+[weather]
+label=
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | tail -1 | xargs echo
+interval=3600
+color=#93a1a1
+
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
@@ -48,6 +55,7 @@ markup=none
 label=
 separator=true
 interval=5
+color=#93a1a1
 
 # Temperature
 #
@@ -57,6 +65,7 @@ interval=5
 [temperature]
 label=
 interval=1
+color=#93a1a1
 
 # Disk usage
 #
@@ -67,6 +76,7 @@ interval=1
 label=
 #instance=/mnt/data
 interval=30
+color=#93a1a1
 
 # Network interface monitoring
 #
@@ -74,7 +84,7 @@ interval=30
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
 #instance=wlan0
-color=#00FF00
+color=#93a1a1
 interval=10
 separator=true
 
@@ -82,6 +92,7 @@ separator=true
 #instance=wlp3s0
 interval=10
 separator=false
+color=#93a1a1
 
 # CPU usage
 #
@@ -92,6 +103,7 @@ label=CPU
 interval=10
 min_width=CPU: 100.00%
 #separator=false
+color=#93a1a1
 
 #[load_average]
 #interval=10
@@ -101,6 +113,7 @@ min_width=CPU: 100.00%
 [time]
 command=date '+%Y-%m-%d %H:%M:%S'
 interval=1
+color=#93a1a1
 
 # Generic media player support
 #
