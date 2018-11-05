@@ -7,6 +7,7 @@ alias pacaur='pacaur --color always'
 alias musicbot='/home/mark/musicbot/run.sh'
 alias pia='/opt/pia/run.sh'
 alias feh='feh -d'
+alias tcpdump='sudo tcpdump'
 
 pb() {
 	if [ -z "$1" ]; then	

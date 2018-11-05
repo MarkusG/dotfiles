@@ -48,3 +48,5 @@ source ~/.zaliases
 
 # Make sudo recognize aliases
 alias sudo='sudo '
+
+cat ~/todo.txt
