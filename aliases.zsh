@@ -1,3 +1,5 @@
+alias sudo='sudo '
+
 alias ytdl-rip='youtube-dl --extract-audio --audio-format mp3'
 alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'

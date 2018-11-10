@@ -230,7 +230,7 @@ for_window [class="termite-float"] floating enable
 for_window [class="^.*"] border pixel 0
 
 # gaps
-gaps inner 8
+gaps inner 6
 smart_gaps on
 
 # autoruns
@@ -279,7 +279,7 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
 	position top
-	tray_output $maindisp
+	tray_output none
 	status_command i3blocks
 	colors {
 		background			#002B36
