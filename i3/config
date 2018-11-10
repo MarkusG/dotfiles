@@ -279,7 +279,7 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
 	position top
-	tray_output $maindisp
+	tray_output none
 	status_command i3blocks
 	colors {
 		background			#002B36
