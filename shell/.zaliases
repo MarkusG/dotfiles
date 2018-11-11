@@ -8,6 +8,7 @@ alias musicbot='/home/mark/musicbot/run.sh'
 alias pia='/opt/pia/run.sh'
 alias feh='feh -d'
 alias tcpdump='sudo tcpdump'
+alias clear-todo='clear; cat ~/todo.txt'
 
 pb() {
 	if [ -z "$1" ]; then	
