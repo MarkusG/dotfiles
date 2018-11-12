@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+linux_source="/home/mark"
+linux_destination="/run/media/mark/External/Mark-Linux-Backup.tar"
+win_source="/mnt/storage/Mark"
+win_destination="/run/media/mark/External/Mark-Win-Backup.tar"
+
+print -P "%B%F{white}Archiving $linux_source to $linux_destination"
+print -P "%F{gray}"
+tar --exclude='/home/mark/JetBrains Rider-181.4379.360' --exclude='/home/mark/.local/share/Steam/*' --exclude='/home/mark/.mozilla/*' --file ${linux_destination} /home/mark --create --verbose
+print -P "%B%F{white}Archiving $win_source to $win_destination"
+print -P "%F{gray}"
+tar --file ${win_destination} /mnt/storage/Mark --create --verbose

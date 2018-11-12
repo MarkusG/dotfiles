@@ -1,0 +1,9 @@
+#!/bin/zsh
+# open a workspace's window when we switch to it
+# proper usage: open-on-switch [application] [workspace]
+
+case $1 in
+	"spotify")
+		i3-msg "workspace $2"
+		! (( ps -elf | grep -E /usr/bin/spotify | grep -v grep )) && /usr/bin/spotify
+esac

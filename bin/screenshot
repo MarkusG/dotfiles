@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# screenshot the desktop using maim and output to a timestamped file
+
+timestamp=$(date +%y-%m-%d_%H-%M-%S)
+
+maim > ~/Screenshots/maim_${timestamp}.png

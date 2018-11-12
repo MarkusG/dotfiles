@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# use maim's selection feature and copy it to the clipboard
+
+# maim -s | xclip -selection clipboard -t image/png
+
+pb() {
+	curl -F c=@- 'https://ptpb.pw/?u=1'
+}
+
+echo '' | xsel -b
+link="$(maim -s | pb).png"
+echo $link | xsel -b

@@ -186,7 +186,7 @@ bindsym Mod4+1 workspace $w1
 bindsym Mod4+2 workspace $w2
 bindsym Mod4+3 workspace $w3
 bindsym Mod4+4 workspace $w4
-bindsym Mod4+5 workspace $w5
+bindsym Mod4+5 exec ~/bin/i3-scripts/open-on-switch spotify $w5
 bindsym Mod4+6 workspace $w6
 bindsym Mod4+7 workspace $w7
 bindsym Mod4+8 workspace $w8
