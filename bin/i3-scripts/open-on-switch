@@ -5,5 +5,8 @@
 case $1 in
 	"spotify")
 		i3-msg "workspace $2"
-		! (( ps -elf | grep -E /usr/bin/spotify | grep -v grep )) && /usr/bin/spotify
+		ps -elf | grep /usr/bin/spotify | grep -v grep
+		if [ $? -eq 1 ]; then
+			spotify
+		fi
 esac
