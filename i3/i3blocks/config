@@ -45,7 +45,7 @@ markup=none
 [weather]
 label=
 command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | tail -1 | xargs echo
-interval=1800
+interval=3600
 color=#93a1a1
 
 # Memory usage
