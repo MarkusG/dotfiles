@@ -80,14 +80,7 @@ bindsym Mod4+Shift+q kill
 bindsym $mod+Control+l exec i3lock -ti wallpaper/Gxzukd.png
 
 # launch
-mode "launch" {
-	bindsym d exec rofi -show run; mode "default"
-	bindsym f exec firefox; mode "default"
-	bindsym s exec spotify; mode "default"
-
-	bindsym Escape mode "default"
-}
-bindsym Mod4+d mode launch
+bindsym Mod4+d exec rofi -show run
 bindsym Mod4+Tab exec rofi -show window
 bindsym Mod4+Shift+d exec rofi-emoji
 
