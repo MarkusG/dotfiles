@@ -234,6 +234,7 @@ exec --no-startup-id thunderbird
 exec --no-startup-id dunst
 exec --no-startup-id syncthing
 exec --no-startup-id redshift -l 33:-117
+exec --no-startup-id run_keybase
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
