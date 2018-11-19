@@ -49,4 +49,7 @@ source ~/.zaliases
 # Make sudo recognize aliases
 alias sudo='sudo '
 
+# Environment variables
+export GPG_TTY=$(tty)
+
 cat ~/todo.txt
