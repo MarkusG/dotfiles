@@ -1,0 +1,10 @@
+#!/bin/zsh
+# open a wiki for the currently running game
+
+plist=$(mktemp /tmp/wiki-XXXXXXX)
+ps -elf > $plist
+
+grep 'EtG' $plist && firefox 'https://enterthegungeon.gamepedia.com/'
+grep 'factorio' $plist && firefox 'https://wiki.factorio.com/'
+
+rm $plist
