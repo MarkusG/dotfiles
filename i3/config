@@ -45,7 +45,7 @@ client.background       #FFFFFF
 hide_edge_borders both
 
 # wallpaper
-exec --no-startup-id feh --bg-fill ~/wallpaper/RH597Hq.jpg
+exec_always --no-startup-id feh --bg-fill ~/wallpaper/current
 
 # compton
 #exec_always compton -b
