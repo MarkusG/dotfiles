@@ -1,8 +1,5 @@
-#!/bin/sh
-
-# use maim's selection feature and copy it to the clipboard
-
-# maim -s | xclip -selection clipboard -t image/png
+#!/bin/zsh
+# screenshot a region using maim and upload to ptpb.pw
 
 pb() {
 	curl -F c=@- 'https://ptpb.pw/?u=1'
@@ -11,3 +8,4 @@ pb() {
 echo '' | xsel -b
 link="$(maim -s | pb).png"
 echo $link | xsel -b
+notify-send -t 1000 'Screenshot uploaded.' -i '/usr/share/icons/Arc/apps/symbolic/applets-screenshooter-symbolic.svg'

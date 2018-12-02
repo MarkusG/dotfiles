@@ -1,7 +1,10 @@
-#!/bin/bash
+#!/bin/zsh
+# screenshot the entire screen using maim and upload to ptpb.pw
 
-# screenshot the desktop using maim and output to a timestamped file
+pb() {
+	curl -F c=@- 'https://ptpb.pw/?u=1'
+}
 
-timestamp=$(date +%y-%m-%d_%H-%M-%S)
-
-maim > ~/Screenshots/maim_${timestamp}.png
+link="$(maim | pb).png"
+echo $link | xsel -b
+notify-send -t 1000 "Screenshot uploaded." -i '/usr/share/icons/Arc/apps/symbolic/applets-screenshooter-symbolic.svg'
