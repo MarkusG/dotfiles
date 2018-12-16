@@ -71,7 +71,8 @@ bindsym Mod4+Return exec termite
 bindsym Mod4+e exec thunar
 
 # screenshot
-bindsym Print exec bash ~/bin/screenshot
+bindsym Print exec ~/bin/screenshot
+bindsym Control+Print exec ~/bin/screenshot-active
 bindsym Control+Shift+Print exec ~/bin/screenshot-select
 
 # kill focused window
