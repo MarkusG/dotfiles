@@ -2,7 +2,8 @@ set nocompatible
 filetype off
 
 set hlsearch
-set number
+set number relativenumber
+set nu rnu
 set smartindent
 set tabstop=4
 set shiftwidth=4
