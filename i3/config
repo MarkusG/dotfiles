@@ -72,9 +72,9 @@ bindsym Mod4+e exec thunar
 
 # screenshot
 mode "screenshot" {
-	bindsym Print mode screenshot
-	bindsym r exec ~/bin/screenshot-select
-	bindsym w exec ~/bin/screenshot-active
+	bindsym Print exec ~/bin/screenshot; mode "default"
+	bindsym r exec ~/bin/screenshot-select; mode "default"
+	bindsym w exec ~/bin/screenshot-active; mode "default"
 
 	bindsym Escape mode "default"
 }
