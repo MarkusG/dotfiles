@@ -1,11 +1,10 @@
 #!/bin/zsh
-# screenshot the active window using maim and upload to ptpb.pw
+# screenshot the active window using maim and upload to 0x0.st
 
 pb() {
-	curl -F c=@- 'https://ptpb.pw/?u=1'
+	curl -F file=@- 'https://0x0.st/'
 }
 
-echo '' | xsel -b
-link="$(maim -i $(xdotool getactivewindow) | pb).png"
+link=$(maim -i $(xdotool getactivewindow) | pb)
 echo $link | xsel -b
 notify-send -t 1000 "Screenshot uploaded." -i '/usr/share/icons/Arc/apps/symbolic/applets-screenshooter-symbolic.svg'
