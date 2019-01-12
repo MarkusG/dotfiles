@@ -5,6 +5,10 @@ pb() {
 	curl -F file=@- 'https://0x0.st/'
 }
 
-link=$(maim -s | pb)
-echo $link | xsel -b
-notify-send -t 1000 'Screenshot uploaded.' -i '/usr/share/icons/Arc/apps/symbolic/applets-screenshooter-symbolic.svg'
+file=$(mktemp /tmp/screenshot_XXXXXX.png)
+maim -s $file
+success=$?
+if [ $success -eq 0 ]; then
+	cat $file | pb | xsel -b
+	notify-send -t 1000 'Screenshot uploaded.' -i '/usr/share/icons/Arc/apps/symbolic/applets-screenshooter-symbolic.svg'
+fi
