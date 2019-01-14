@@ -1,5 +1,5 @@
 [options]
-font = Roboto Mono 8
+font = Hack 8
 cursor_blink = off
 allow_bold = true
 scrollback_lines = 10000
