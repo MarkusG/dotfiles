@@ -235,14 +235,12 @@ gaps inner 8
 smart_gaps on
 
 # autoruns
-exec --no-startup-id ckb-next
+exec --no-startup-id ckb-next -b
 exec --no-startup-id discord
 exec --no-startup-id dropbox
 exec --no-startup-id thunderbird
 exec --no-startup-id dunst
-exec --no-startup-id syncthing
 exec --no-startup-id redshift -l 33:-117
-exec --no-startup-id run_keybase
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
