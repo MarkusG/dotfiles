@@ -213,6 +213,7 @@ bindsym Mod4+Shift+Control+Right move workspace to output right
 workspace $w1 output $leftdisp
 workspace $w6 output $leftdisp
 workspace $w3 output $maindisp
+workspace $w5 output $leftdsip
 
 # window assignments
 assign [class=discord] $w1
