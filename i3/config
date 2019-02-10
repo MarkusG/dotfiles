@@ -84,7 +84,7 @@ bindsym Print mode "screenshot"
 # kill focused window
 bindsym Mod4+Shift+q kill
 
-bindsym $mod+Control+l exec i3lock -ti wallpaper/Gxzukd.png
+bindsym $mod+Control+l exec i3lock -ti wallpaper/lock
 
 # launch
 bindsym Mod4+d exec rofi -show run
