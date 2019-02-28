@@ -1,15 +1,9 @@
 #!/bin/zsh
-# screenshot a region using maim and upload to 0x0.st
+# screenshot a region using maim and copy it to the clipboard
 
-pb() {
-	curl -F file=@- 'https://0x0.st/'
-}
-
-file=$(mktemp /tmp/screenshot_XXXXXX.png)
+file=/tmp/screenshot.png
 maim --select --hidecursor $file
 success=$?
 if [ $success -eq 0 ]; then
-	cat $file | pb | xsel -b
-	notify-send -t 1000 'Screenshot uploaded.' -i '/usr/share/icons/Arc/apps/symbolic/applets-screenshooter-symbolic.svg'
+	cat $file | xclip -selection clipobard -target image/png
 fi
-rm $file

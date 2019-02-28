@@ -1,10 +1,6 @@
 #!/bin/zsh
-# screenshot the entire screen using maim and upload to 0x0.st
+# screenshot the entire screen using maim and copy it to the clipboard
 
-pb() {
-	curl -F file=@- 'https://0x0.st/'
-}
-
-link=$(maim | pb)
-echo $link | xsel -b
-notify-send -t 1000 "Screenshot uploaded." -i '/usr/share/icons/Arc/apps/symbolic/applets-screenshooter-symbolic.svg'
+file=/tmp/screenshot.png
+maim $file
+cat $file | xclip -selection clipboard -target image/png

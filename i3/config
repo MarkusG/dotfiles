@@ -75,6 +75,7 @@ mode "screenshot" {
 	bindsym Print exec ~/bin/screenshot; mode "default"
 	bindsym r exec ~/bin/screenshot-select; mode "default"
 	bindsym w exec ~/bin/screenshot-active; mode "default"
+	bindsym u exec ~/bin/screenshot-upload; mode "default"
 
 	bindsym Escape mode "default"
 }
