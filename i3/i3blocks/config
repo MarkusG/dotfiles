@@ -44,7 +44,7 @@ markup=none
 # Weather
 [weather]
 label=
-command=cat ~/dotfiles/i3/i3blocks/wttr.txt | xargs curl -Ss | cut -c 16- | head -2 | tail -1 | xargs echo
+command=cat ~/dotfiles/i3/i3blocks/wttr.txt | xargs curl -Ss | cut -c 16- | head -n 2 | tr '\n' ' ' | xargs echo
 interval=3600
 color=#93a1a1
 
