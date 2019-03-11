@@ -1,4 +1,9 @@
 #!/bin/zsh
+# return metadata about the current song
+
+if ! ps -elf | grep spotify | grep -v grep > /dev/null; then
+	exit
+fi
 
 metadata=$(playerctl metadata)
 artist=$(echo $metadata | grep 'xesam:artist' | cut -c 35-)

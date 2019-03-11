@@ -41,6 +41,13 @@ markup=none
 #interval=1
 #signal=10
 
+# Now playing
+[nowplaying]
+label=
+command=~/dotfiles/bin/now-playing
+interval=1
+color=#93a1a1
+
 # Weather
 [weather]
 label=
