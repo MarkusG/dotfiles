@@ -130,8 +130,8 @@ bindsym Mod4+Shift+Up move up
 bindsym Mod4+Shift+Right move right
 
 mode "split" {
-	bindsym h split h
-	bindsym v split v
+	bindsym h split h; mode "default"
+	bindsym v split v; mode "default"
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
