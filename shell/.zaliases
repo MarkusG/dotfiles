@@ -9,6 +9,7 @@ alias pia='/opt/pia/run.sh'
 alias feh='feh -d'
 alias tcpdump='sudo tcpdump'
 alias clear-todo='clear; cat ~/todo.txt'
+alias git='hub'
 
 pb() {
 	if [ -z "$1" ]; then	
