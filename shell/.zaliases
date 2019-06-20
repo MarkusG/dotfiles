@@ -10,21 +10,3 @@ alias feh='feh -d'
 alias tcpdump='sudo tcpdump'
 alias clear-todo='clear; cat ~/todo.txt'
 alias git='hub'
-
-pb() {
-	if [ -z "$1" ]; then	
-		_pb_base
-	else
-		_pb_code "$1"
-	fi
-}
-
-_pb_base() {
-	curl -F c=@- 'https://ptpb.pw/?u=1'
-}
-
-_pb_code() {
-	link=$(cat $1 | _pb_base)
-	extension=$(echo $1 | grep -Eo '\.([a-zA-Z]*$)' | cut -c 2-)
-	echo "${link}/${extension}"
-}
