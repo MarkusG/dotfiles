@@ -65,7 +65,7 @@ set $mod Mod4
 floating_modifier Mod4
 
 # start a terminal
-bindsym Mod4+Return exec kitty
+bindsym Mod4+Return exec termite
 
 # start thunar
 bindsym Mod4+e exec thunar
