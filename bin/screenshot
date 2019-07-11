@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # screenshot the entire screen using maim and copy it to the clipboard
 
 file=/tmp/screenshot.png

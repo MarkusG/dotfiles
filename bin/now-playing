@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # return metadata about the current song
 
 if ! ps -elf | grep spotify | grep -v grep > /dev/null; then

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # open a wiki for the currently running game
 
 plist=$(mktemp /tmp/wiki-XXXXXXX)

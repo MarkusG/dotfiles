@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # screenshot a region using maim and copy it to the clipboard
 
 file=/tmp/screenshot.png
