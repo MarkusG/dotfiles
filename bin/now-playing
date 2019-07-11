@@ -6,8 +6,8 @@ if ! ps -elf | grep spotify | grep -v grep > /dev/null; then
 fi
 
 metadata=$(playerctl -p spotify metadata)
-artist=$(echo $metadata | grep 'xesam:artist' | cut -c 35-)
-album=$(echo $metadata | grep 'xesam:album[ \t]' | cut -c 35-)
-title=$(echo $metadata | grep 'xesam:title' | cut -c 35-)
+artist=$(echo "$metadata" | grep 'xesam:artist' | cut -c 35-)
+album=$(echo "$metadata" | grep 'xesam:album[ \t]' | cut -c 35-)
+title=$(echo "$metadata" | grep 'xesam:title' | cut -c 35-)
 
 echo "$artist - $title | $album"
