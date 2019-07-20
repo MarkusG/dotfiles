@@ -72,12 +72,11 @@ bindsym Mod4+e exec thunar
 
 # screenshot
 mode "screenshot" {
-	bindsym Print exec ~/bin/screenshot; mode "default"
-	bindsym r exec ~/bin/screenshot-select; mode "default"
-	bindsym w exec ~/bin/screenshot-active; mode "default"
-	bindsym u exec ~/bin/screenshot-upload; mode "default"
-	bindsym c exec ~/bin/screencast-record; mode "default"
-	bindsym d exec ~/bin/screencast-finish; mode "default"
+	bindsym Print exec shshare screenshot full upload; mode "default"
+	bindsym r exec shshare screenshot region upload; mode "default"
+	bindsym w exec shshare screenshot focused upload; mode "default"
+	bindsym c exec shshare screencast region upload; mode "default"
+	bindsym d exec shshare screencast-stop; mode "default"
 
 	bindsym Escape mode "default"
 }
