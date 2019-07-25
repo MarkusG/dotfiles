@@ -1,8 +1,0 @@
-#!/bin/bash
-# screenshot the entire screen using maim and copy it to the clipboard
-
-file=/tmp/screenshot.png
-# give the bar time to hide itself before taking the screenshot
-sleep .2
-maim $file
-cat $file | xclip -selection clipboard -target image/png

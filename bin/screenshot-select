@@ -1,9 +1,0 @@
-#!/bin/bash
-# screenshot a region using maim and copy it to the clipboard
-
-file=/tmp/screenshot.png
-maim --select --hidecursor $file
-success=$?
-if [ $success -eq 0 ]; then
-	cat $file | xclip -selection clipobard -target image/png
-fi

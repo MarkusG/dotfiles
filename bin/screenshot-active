@@ -1,8 +1,0 @@
-#!/bin/bash
-# screenshot the active window using maim and copy it to the clipboard
-
-file=/tmp/screenshot.png
-# give the bar time to hide itself before taking the screenshot
-sleep .2
-maim --hidecursor --window=$(xdotool getactivewindow) $file
-cat $file | xclip -selection clipboard -target image/png
