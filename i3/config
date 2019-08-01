@@ -25,11 +25,8 @@ font pango: Noto Sans 9
 # font, it doesn’t scale on retina/hidpi displays.
 
 # color variables
-set $darker  #2B343D
-set $dark    #425A5A
-set $mid     #758D77
-set $light   #B7C0A1
-set $lighter #D8D6B0
+set $gray	#181818
+set $white	#d8d8d8
 
 # colors
 # class                 border  bground text    indicator child_border
@@ -285,9 +282,9 @@ bar {
 	tray_output none
 	status_command i3blocks
 	colors {
-		background			#002B36
-		focused_workspace	#657b83 #002B36 #93a1a1
-		active_workspace	#002B36 #002B36 #93a1a1
-		inactive_workspace	#002B36 #002B36 #93a1a1
+		background			$gray
+		focused_workspace	$gray $white $gray
+		active_workspace	$gray $white $gray
+		inactive_workspace	$gray $gray $white
 	}
 }

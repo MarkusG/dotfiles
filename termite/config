@@ -4,73 +4,52 @@ cursor_blink = off
 allow_bold = true
 scrollback_lines = 10000
 
-# [colors]
-# foreground = #b8b8b8
-# background = rgba(0, 0, 0, 0.8)
-# 
-# color0 =  #000000
-# color1 =  #98565e
-# color2 =  #66825d
-# color3 =  #969176
-# color4 =  #4d6585
-# color5 =  #967395
-# color6 =  #5f7f7b
-# color7 =  #b3b3b3
-# color8 =  #737373
-# color9 =  #cfa3a9
-# color10 = #caf7bb
-# color11 = #fff8bc
-# color12 = #83a3be
-# color13 = #bba9cf
-# color14 = #96cccc
-# color15 = #ffffff
-
 [colors]
-# Base16 Solarized Dark
-# Author: Ethan Schoonover (modified by aramisgithub)
+# Base16 Default Dark
+# Author: Chris Kempson (http://chriskempson.com)
 
-foreground          = #93a1a1
-foreground_bold     = #eee8d5
-cursor              = #eee8d5
-cursor_foreground   = #002b36
-background          = rgba(0, 43, 54, 0.9)
+foreground          = #d8d8d8
+foreground_bold     = #e8e8e8
+cursor              = #e8e8e8
+cursor_foreground   = #181818
+background          = #181818
 
 # 16 color space
 
 # Black, Gray, Silver, White
-color0  = #002b36
-color8  = #657b83
-color7  = #93a1a1
-color15 = #fdf6e3
+color0  = #181818
+color8  = #585858
+color7  = #d8d8d8
+color15 = #f8f8f8
 
 # Red
-color1  = #dc322f
-color9  = #dc322f
+color1  = #ab4642
+color9  = #ab4642
 
 # Green
-color2  = #859900
-color10 = #859900
+color2  = #a1b56c
+color10 = #a1b56c
 
 # Yellow
-color3  = #b58900
-color11 = #b58900
+color3  = #f7ca88
+color11 = #f7ca88
 
 # Blue
-color4  = #268bd2
-color12 = #268bd2
+color4  = #7cafc2
+color12 = #7cafc2
 
 # Purple
-color5  = #6c71c4
-color13 = #6c71c4
+color5  = #ba8baf
+color13 = #ba8baf
 
 # Teal
-color6  = #2aa198
-color14 = #2aa198
+color6  = #86c1b9
+color14 = #86c1b9
 
 # Extra colors
-color16 = #cb4b16
-color17 = #d33682
-color18 = #073642
-color19 = #586e75
-color20 = #839496
-color21 = #eee8d5
+color16 = #dc9656
+color17 = #a16946
+color18 = #282828
+color19 = #383838
+color20 = #b8b8b8
+color21 = #e8e8e8
