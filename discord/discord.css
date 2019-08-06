@@ -1,0 +1,131 @@
+div[class^='messageGroupBlocked'] {
+	display: none !important;
+}
+
+div[class^='messageCompact'] {
+	font-family: Roboto !important;
+}
+
+textarea {
+	font-family: Roboto !important;
+}
+
+:root {
+  --background: #181818;
+  --foreground: #d8d8d8;
+  --red: #f2777a;
+  --darkred: #ab4642;
+  --green: #a1b56c;
+  --grey: #585858;
+  --blue: #6699cc;
+}
+
+code {
+	font-family: Roboto Mono !important;
+	background-color: var(--background) !important;
+	border-color: var(--grey) !important;
+	border: 2px !important;
+}
+
+pre {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+div[class="wrapper-1Rf91z"] {
+	display: none;
+}
+
+div[class*="title"],
+div[class*="messagesWrapper"],
+div[class*="content"],
+div[class*="content"] form,
+div[class*="content"] form div[class*="inner"],
+div[class*="content"] form div[class*="typing"],
+div[class*="scroller"],
+div[class*="container"],
+div[class*="category"],
+div[class*="emojiPicker"],
+div[class*="wrapper"],
+div[class*="searchBar"],
+div[class*="embedInner"],
+div[class*="autocomplete"],
+div[class*="quickswitcher"],
+div[class*="userPopout"] div[class*="footer"],
+div[class*="body-3iLsc4"],
+div[class*="item"],
+div[class*="popoutList"],
+input, 
+header {
+  background-color: var(--background) !important;
+  border-color: var(--background) !important;
+}
+
+div[class*="headerPlaying"],
+div[class*="activityUserPopout"] {
+	background-color: var(--blue) !important;
+}
+
+
+div[class*="contentImagesUserPopout"],
+div[class*="contentGameImageUserPopout"],
+div[class*="contents"] {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+div[class*="isMentioned"] {
+	background-color: var(--darkred) !important;
+	color: var(--darkred) !important;
+}
+
+span[class*="dividerContent"] {
+  color: var(--grey) !important;
+}
+
+div[class*="embedPill"] {
+	color: var(--grey) !important;
+	background-color: var(--grey) !important;
+}
+
+/* quick switcher selection */
+div[class*="resultFocused"] div {
+	background-color: var(--grey) !important;
+}
+
+/* quick switcher alignment */
+div[class*="quickswitcher"] div[class*="input"] {
+	padding 0 20px !important;
+}
+
+div[class*="containerDefault"][class*="selected"], div[class*="containerDefault"][class*="selected"] div[class*="content"] {
+  background-color: var(--grey) !important;
+}
+
+div[class*="containerDefault"],
+div[class*="selected"],
+div[class*="content"],
+div[class*="category"],
+div[class*="textArea"],
+svg {
+  color: var(--foreground) !important;
+}
+
+div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-thumb,
+div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-track-piece {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0px solid red !important;
+}
+
+div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-track-piece {
+  background-color: var(--background) !important;
+}
+
+div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-thumb {
+  background-color: var(--grey) !important;
+
+
+}
+
+div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar {
+  width: 2px !important;
+}
