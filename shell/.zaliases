@@ -11,3 +11,12 @@ alias tcpdump='sudo tcpdump'
 alias clear-todo='clear; cat ~/todo.txt'
 alias git='hub'
 alias cp='rsync -ah --progress'
+
+scratch () {
+    if [ -z "$1" ]
+    then
+        vim ~/.scratch
+    else
+        vim ~/.scratch.d/$1
+    fi
+}
