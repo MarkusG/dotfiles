@@ -54,16 +54,21 @@ div[class*="userPopout"] div[class*="footer"],
 div[class*="body-3iLsc4"],
 div[class*="item"],
 div[class*="popoutList"],
+div[class*="headerNormal"],
+div[class*="headerPlaying"],
+div[class*="headerSpotify"],
+div[class*="activityUserPopout"],
 input, 
 header {
   background-color: var(--background) !important;
   border-color: var(--background) !important;
 }
 
-div[class*="headerPlaying"],
-div[class*="activityUserPopout"] {
-	background-color: var(--blue) !important;
-}
+/* div[class*="headerPlaying"], */
+/* div[class*="headerSpotify"], */
+/* div[class*="activityUserPopout"] { */
+/* 	background-color: var(--blue) !important; */
+/* } */
 
 
 div[class*="contentImagesUserPopout"],
