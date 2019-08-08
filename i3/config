@@ -73,7 +73,7 @@ mode "screenshot" {
 	bindsym r exec shshare --type screenshot --selection region --destination upload; mode "default"
 	bindsym w exec shshare --type screenshot --selection focused --destination upload; mode "default"
 	bindsym c exec shshare --type screencast --selection region --destination upload; mode "default"
-	bindsym d exec shshare screencast-stop; mode "default" # TODO: oops i broke this in shshare
+	bindsym d exec shshare --stop-screencast; mode "default"
 
 	bindsym Escape mode "default"
 }
