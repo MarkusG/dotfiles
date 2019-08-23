@@ -8,8 +8,57 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 
+" smart case
+set ignorecase
+set smartcase
+
+" undo file
+set undofile
+set undolevels=1000
+set undoreload=10000
+
+" auto reload
+set autoread
+
+" save unwritten buffers
+set hidden
+
+" shorten things
+set shortmess=atI
+
+" unite the clipboards
+if has('unnamedplus')
+    set clipboard=unnamed,unnamedplus
+endif
+
+" dont make comments so sticky
+set formatoptions-=r
+" lists
+set formatoptions+=n
+" comments on line joins
+set formatoptions+=j
+
+" ignore my slow fingers
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qa! qa!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qa qa
+
+" navigate tabs with shift
+nnoremap H gT
+nnoremap L gt
+
+"tab management with t leader
+nnoremap tn :tabnew<CR>
+nnoremap tq :tabclose<CR>
+
 syntax on
-" map time
 " move through wrapped lines as if they were individual lines
 map j gj
 map k gk
