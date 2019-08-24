@@ -73,6 +73,25 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
 
+Plugin 'SirVer/ultisnips' " snippet engine
+Plugin 'honza/vim-snippets' " snippets
+" snippets: trigger config
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+Plugin 'airblade/vim-gitgutter' " show changes in vim
+Plugin 'chrisbra/Colorizer' " color hex codes accordingly
+
+Plugin 'scrooloose/nerdtree' " file tree
+nnoremap <C-t> :NERDTree<CR>
+let g:NERDTreeShowHidden=1
+let g:NERDTreeSortHiddenFirst=1
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " autoclose
+
+Plugin 'mhinz/vim-startify' " neat start menu
+let g:startify_files_number = 40
+
 " syntastic
 Plugin 'vim-syntastic/syntastic'
 set statusline+=%#warningmsg#
