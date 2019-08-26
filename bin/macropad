@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+MACRO_DIR=$([[ -z $XDG_CONFIG_HOME ]] && echo "$HOME/.config/macropad" || echo "$XDG_CONFIG_HOME/macropad")
+MACROS=()
+
+# get our macros
+for file in "$MACRO_DIR"/*; do
+	MACROS+=("$(basename "$file")")
+done
+
+# post them to rofi and get the user's selection
+selection="$(printf '%s\n' "${MACROS[@]}" | rofi -dmenu)"
+fullpath="$MACRO_DIR/$selection"
+
+# copy to clipboard
+xsel -b < "$fullpath"

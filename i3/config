@@ -89,6 +89,7 @@ bindsym $mod+Control+l exec i3lock -ti wallpaper/lock
 bindsym Mod4+d exec rofi -show run
 bindsym Mod4+Tab exec rofi -show window
 bindsym Mod4+Shift+d exec rofi-emoji
+bindsym Mod4+Shift+m exec macropad
 
 # media keys
 bindsym XF86AudioPrev exec playerctl previous 
