@@ -5,5 +5,5 @@
 case $1 in
 	"spotify")
 		i3-msg "workspace $2"
-		pgrep spotify || spotify
+		pgrep spotify || spotify & disown
 esac
