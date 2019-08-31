@@ -9,7 +9,7 @@ for file in "$MACRO_DIR"/*; do
 done
 
 # post them to rofi and get the user's selection
-selection="$(printf '%s\n' "${MACROS[@]}" | rofi -dmenu)"
+selection="$(printf '%s\n' "${MACROS[@]}" | rofi -dmenu -p 'macro')"
 fullpath="$MACRO_DIR/$selection"
 
 # copy to clipboard
