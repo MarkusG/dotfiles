@@ -211,13 +211,13 @@ bindsym Mod4+Shift+Control+Right move workspace to output right
 
 # workspace display assignments
 workspace $w1 output $leftdisp
+workspace $w2 output $maindisp
 workspace $w6 output $leftdisp
 workspace $w3 output $maindisp
 workspace $w5 output $leftdsip
 
 # window assignments
 assign [class=discord] $w1
-assign [class=Firefox] $w3
 assign [class=Steam]   $w4
 assign [class=spotify] $w5
 assign [class=Thunderbird] $w6
@@ -242,6 +242,9 @@ exec --no-startup-id dropbox
 exec --no-startup-id thunderbird
 exec --no-startup-id dunst
 exec --no-startup-id redshift -l 33:-117
+exec --no-startup-id termite
+exec --no-startup-id firefox
+for_window [class=firefox] move workspace $w3
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
