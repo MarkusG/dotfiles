@@ -49,7 +49,8 @@ source ~/.zaliases
 # Make sudo recognize aliases
 alias sudo='sudo '
 
-# Environment variables
+# make gpg work with git and ssh
 export GPG_TTY=$(tty)
+echo UPDATESTARTUPTTY | gpg-connect-agent
 
 cat ~/todo.txt
