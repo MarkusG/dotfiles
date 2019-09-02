@@ -51,6 +51,6 @@ alias sudo='sudo '
 
 # make gpg work with git and ssh
 export GPG_TTY=$(tty)
-echo UPDATESTARTUPTTY | gpg-connect-agent
+echo UPDATESTARTUPTTY | gpg-connect-agent > /dev/null
 
 cat ~/todo.txt
