@@ -24,7 +24,7 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=/usr/lib/i3blocks/$BLOCK_NAME
+# command=/usr/lib/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
@@ -43,7 +43,7 @@ markup=none
 
 # Now playing
 [nowplaying]
-label=
+label= 
 command=~/dotfiles/bin/now-playing
 interval=1
 color=#93a1a1
@@ -59,7 +59,8 @@ color=#93a1a1
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-label=
+command=$SCRIPT_DIR/memory
+label= 
 separator=true
 interval=5
 color=#93a1a1
@@ -70,7 +71,8 @@ color=#93a1a1
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [temperature]
-label=
+command=$SCRIPT_DIR/temperature
+label= 
 interval=1
 color=#93a1a1
 
@@ -80,9 +82,15 @@ color=#93a1a1
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=
+command=$SCRIPT_DIR/disk
+label= 
 #instance=/mnt/data
 interval=30
+color=#93a1a1
+
+[disk-io]
+command=$SCRIPT_DIR/disk-io
+interval=1
 color=#93a1a1
 
 # Network interface monitoring
@@ -90,22 +98,24 @@ color=#93a1a1
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
+command=$SCRIPT_DIR/iface
 #instance=wlan0
 color=#93a1a1
 interval=10
 separator=true
 
-[wifi]
+# [wifi]
 #instance=wlp3s0
-interval=10
-separator=false
-color=#93a1a1
+# interval=10
+# separator=false
+# color=#93a1a1
 
 # CPU usage
 #
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
+command=$SCRIPT_DIR/cpu_usage
 label=CPU
 interval=10
 min_width=CPU: 100.00%

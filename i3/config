@@ -284,7 +284,7 @@ bar {
 	mode hide
 	position top
 	tray_output none
-	status_command i3blocks
+	status_command SCRIPT_DIR=~/.config/i3blocks/blocklets i3blocks
 	colors {
 		background			$gray
 		focused_workspace	$gray $white $gray
