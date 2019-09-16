@@ -1,99 +1,90 @@
+/* pretty colors */
+.theme-dark {
+  --background-primary: #181818 !important;
+  --background-secondary: #181818 !important;
+  --background-tertiary: #181818 !important;
+  --background-accent: #181818 !important;
+  --background-floating: #181818 !important;
+  --channeltextarea-background: #181818 !important;
+  --deprecated-panel-background: #181818 !important;
+  --deprecated-quickswitcher-input-background: #181818 !important;
+  --text-normal: #d8d8d8 !important;
+  --red: #f2777a !important;
+  --darkred: #ab4642 !important;
+  --green: #a1b56c !important;
+  --grey: #585858 !important;
+  --blue: #6699cc !important;
+}
+
+/* some colors still don't use variables */
+.container-3gCOGc {
+	background-color: var(--background-primary) !important;
+}
+
+/* user popout backgrounds */
+.userPopout-3XzG_A * {
+	background-color: var(--background-primary) !important;
+}
+
+/* popout and context menu borders */
+.userPopout-3XzG_A,
+.contextMenu-HLZMGh {
+	border: 2px solid var(--grey) !important;
+}
+
+/* member list border */
+.membersWrap-2h-GB4 {
+	border-left: 2px solid var(--grey) !important;
+}
+
+/* title border */
+.title-3qD0b- {
+	border-bottom: 2px solid var(--grey) !important;
+}
+
+/* sidebar border */
+.sidebar-2K8pFh {
+	border-right: 2px solid var(--grey) !important;
+}
+
+/* voice chat status border */
+.panels-j1Uci_ {
+	border-top: 2px solid var(--grey) !important;
+}
+
+/* praise roboto */
+:not(code) {
+	font-family: Roboto !important
+}
+
+code,
+code * {
+	font-family: Roboto Mono !important;
+}
+
+/* if you want a feature done right you have to implement it yourself */
 div[class^='messageGroupBlocked'] {
 	display: none !important;
 }
 
-div[class^='messageCompact'] {
-	font-family: Roboto !important;
+/* make mention messages red */
+.isMentioned-N-h9aa {
+	background-color: var(--darkred) !important;
+}
+
+/* hide scrollbars */
+div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-thumb,
+div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-track-piece {
+  display: none !important;
+}
+
+/* fix font weight after discord made it terrible */
+div[class^='isCompact'] {
+	font-weight: 300 !important;
 }
 
 textarea {
-	font-family: Roboto !important;
-}
-
-:root {
-  --background: #181818;
-  --foreground: #d8d8d8;
-  --red: #f2777a;
-  --darkred: #ab4642;
-  --green: #a1b56c;
-  --grey: #585858;
-  --blue: #6699cc;
-}
-
-code {
-	font-family: Roboto Mono !important;
-	background-color: var(--background) !important;
-	border-color: var(--grey) !important;
-	border: 2px !important;
-}
-
-pre {
-	background-color: rgba(0, 0, 0, 0) !important;
-}
-
-div[class="wrapper-1Rf91z"] {
-	display: none;
-}
-
-div[class*="title"],
-div[class*="messagesWrapper"],
-div[class*="content"],
-div[class*="content"] form,
-div[class*="content"] form div[class*="inner"],
-div[class*="content"] form div[class*="typing"],
-div[class*="scroller"],
-div[class*="container"],
-div[class*="category"],
-div[class*="emojiPicker"],
-div[class*="wrapper"],
-div[class*="searchBar"],
-div[class*="embedInner"],
-div[class*="autocomplete"],
-div[class*="quickswitcher"],
-div[class*="userPopout"] div[class*="footer"],
-div[class*="body-3iLsc4"],
-div[class*="item"],
-div[class*="popoutList"],
-div[class*="headerNormal"],
-div[class*="headerPlaying"],
-div[class*="headerSpotify"],
-div[class*="activityUserPopout"],
-input, 
-header {
-  background-color: var(--background) !important;
-  border-color: var(--background) !important;
-}
-
-/* div[class*="headerPlaying"], */
-/* div[class*="headerSpotify"], */
-/* div[class*="activityUserPopout"] { */
-/* 	background-color: var(--blue) !important; */
-/* } */
-
-
-div[class*="contentImagesUserPopout"],
-div[class*="contentGameImageUserPopout"],
-div[class*="contents"] {
-	background-color: rgba(0, 0, 0, 0) !important;
-}
-
-div[class*="isMentioned"] {
-	background-color: var(--darkred) !important;
-	color: var(--darkred) !important;
-}
-
-span[class*="dividerContent"] {
-  color: var(--grey) !important;
-}
-
-div[class*="embedPill"] {
-	color: var(--grey) !important;
-	background-color: var(--grey) !important;
-}
-
-/* quick switcher selection */
-div[class*="resultFocused"] div {
-	background-color: var(--grey) !important;
+	font-weight: 400 !important;
 }
 
 /* quick switcher alignment */
@@ -101,36 +92,7 @@ div[class*="quickswitcher"] div[class*="input"] {
 	padding 0 20px !important;
 }
 
-div[class*="containerDefault"][class*="selected"], div[class*="containerDefault"][class*="selected"] div[class*="content"] {
-  background-color: var(--grey) !important;
-}
-
-div[class*="containerDefault"],
-div[class*="selected"],
-div[class*="content"],
-div[class*="category"],
-div[class*="textArea"],
-svg {
-  color: var(--foreground) !important;
-}
-
-div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-thumb,
-div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-track-piece {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: 0px solid red !important;
-}
-
-div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-track-piece {
-  background-color: var(--background) !important;
-}
-
-div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar-thumb {
-  background-color: var(--grey) !important;
-
-
-}
-
-div[class*="scrollerWrap"] div[class*="scroller"]::-webkit-scrollbar {
-  width: 2px !important;
+/* hide guild navigator */
+.base-3dtUhz {
+	left: 0px !important;
 }
