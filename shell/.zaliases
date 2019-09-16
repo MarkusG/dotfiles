@@ -10,7 +10,7 @@ alias feh='feh -d'
 alias tcpdump='sudo tcpdump'
 alias clear-todo='clear; cat ~/todo.txt'
 alias git='hub'
-alias cp='rsync -ah --progress'
+alias cp='rsync -Lah --progress'
 alias gpge='gpg --encrypt --recipient 6F8F715D6CEAC6CCC49D996BA7E6852582706775'
 alias gpgd='gpg -o - --decrypt'
 
