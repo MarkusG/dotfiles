@@ -53,6 +53,11 @@
 	border-top: 2px solid var(--grey) !important;
 }
 
+/* call border */
+.videoHeight-Qp_9vC {
+	border-bottom: 2px solid var(--grey) !important;
+}
+
 /* praise roboto */
 :not(code) {
 	font-family: Roboto !important
