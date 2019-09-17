@@ -69,6 +69,11 @@ code * {
 	font-family: Roboto Mono !important;
 }
 
+/* mark unread channels bold */
+.unread-3zKkbm {
+	font-weight: 600;
+}
+
 /* if you want a feature done right you have to implement it yourself */
 div[class^='messageGroupBlocked'] {
 	display: none !important;
