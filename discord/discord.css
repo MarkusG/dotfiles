@@ -23,6 +23,10 @@
 	background-color: var(--background-primary) !important;
 }
 
+div[class^="autocomplete"] {
+	background-color: var(--background-primary) !important;
+}
+
 /* user popout backgrounds */
 .userPopout-3XzG_A * {
 	background-color: var(--background-primary) !important;
@@ -107,4 +111,9 @@ div[class*="quickswitcher"] div[class*="input"] {
 /* hide guild navigator */
 .base-3dtUhz {
 	left: 0px !important;
+}
+
+/* hide message box buttons */
+.buttons-205you {
+	display: none !important;
 }
