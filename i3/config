@@ -64,9 +64,6 @@ floating_modifier Mod4
 # start a terminal
 bindsym Mod4+Return exec termite
 
-# start thunar
-bindsym Mod4+e exec thunar
-
 # screenshot
 mode "screenshot" {
 	bindsym Print exec shshare --type screenshot --selection full --destination upload --wait .5; mode "default"
