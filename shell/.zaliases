@@ -13,6 +13,8 @@ alias git='hub'
 alias cp='rsync -Lah --progress'
 alias gpge='gpg --encrypt --recipient 6F8F715D6CEAC6CCC49D996BA7E6852582706775'
 alias gpgd='gpg -o - --decrypt'
+alias grep='grep --color=always'
+alias ssh='TERM=xterm ssh'
 
 scratch () {
     if [ -z "$1" ]
