@@ -14,8 +14,8 @@ alias cp='rsync -Lah --progress'
 alias gpge='gpg --encrypt --recipient 6F8F715D6CEAC6CCC49D996BA7E6852582706775'
 alias gpgd='gpg -o - --decrypt'
 alias grep='grep -n --color=always'
-alias grepa='grep -A -n 6'
-alias grepar='grep -C -n 6'
+alias grepa='grep -n -A 6'
+alias grepar='grep -n -C 6'
 alias ssh='TERM=xterm ssh'
 
 scratch () {
