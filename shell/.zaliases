@@ -17,6 +17,7 @@ alias grep='grep -n --color=always'
 alias grepa='grep -n -A 6'
 alias grepar='grep -n -C 6'
 alias ssh='TERM=xterm ssh'
+alias cll='ls -la --color=never'
 
 splay() {
 	id=$(echo $1 | cut -d'/' -f 5 | cut -d'?' -f 1)
