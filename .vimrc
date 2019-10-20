@@ -72,6 +72,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
+Plugin 'lilydjwg/colorizer'
 
 Plugin 'SirVer/ultisnips' " snippet engine
 Plugin 'honza/vim-snippets' " snippets
