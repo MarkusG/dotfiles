@@ -18,6 +18,7 @@ alias grepa='grep -n -A 6'
 alias grepar='grep -n -C 6'
 alias ssh='TERM=xterm ssh'
 alias cll='ls -la --color=never'
+alias devenv='i3-msg append_layout ~/.config/i3/dev-workspace.json && termite & disown && termite & disown && termite & disown && exit'
 
 splay() {
 	id=$(echo $1 | cut -d'/' -f 5 | cut -d'?' -f 1)
