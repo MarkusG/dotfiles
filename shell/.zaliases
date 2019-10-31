@@ -20,7 +20,9 @@ alias ssh='TERM=xterm ssh'
 alias cll='ls -la --color=never'
 
 devenv() {
-	cd $1
+	if [[ -n "$1" ]]; then
+		cd $1
+	fi
 	i3-msg append_layout ~/.config/i3/dev-workspace.json
 	for i in {0..2}; do
 		termite & disown
