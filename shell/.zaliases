@@ -18,6 +18,7 @@ alias grepa='grep -n -A 6'
 alias grepar='grep -n -C 6'
 alias ssh='TERM=xterm ssh'
 alias cll='ls -la --color=never'
+alias todo='cat ~/todo.txt'
 
 devenv() {
 	if [[ -n "$1" ]]; then

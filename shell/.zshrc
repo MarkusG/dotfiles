@@ -51,5 +51,3 @@ alias sudo='sudo '
 
 # make gpg work with git and ssh
 export GPG_TTY=$(tty)
-
-cat ~/todo.txt
