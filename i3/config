@@ -175,7 +175,7 @@ set $w9 9
 set $w10 10
 
 # display variables
-set $maindisp DVI-D-1
+set $maindisp DVI-D-0
 set $leftdisp DVI-I-1
 
 # switch to workspace
