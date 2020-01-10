@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rsync -rv /media/hdd/media /run/media/mark/Mark-External/media
+rsync -rv /hdd/media/ /run/media/mark/Mark-External/media/
 restic -r /run/media/mark/Mark-External/restic-repo-finch \
 	--exclude .cache \
 	--exclude .cargo \
@@ -8,9 +8,7 @@ restic -r /run/media/mark/Mark-External/restic-repo-finch \
 	--exclude .wine \
 	--exclude .dotnet \
 	--exclude .docker \
-	--exclude /media/hdd/steam-library \
-	--exclude /media/hdd/games \
-	--exclude /media/hdd/virtual-machines \
-	--exclude /media/hdd/podcasts \
-	--exclude /media/hdd/tv-and-movies \
-	--verbose backup ~ /media/hdd
+	--exclude .lutris \
+	--exclude .local/share/steam \
+	--exclude /hdd/media \
+	--verbose backup ~ /hdd
