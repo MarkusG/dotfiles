@@ -16,6 +16,7 @@
   --green: #a1b56c !important;
   --grey: #585858 !important;
   --blue: #6699cc !important;
+  --yellow: #f7ca88 !important;
 }
 
 /* some colors still don't use variables */
@@ -71,6 +72,11 @@ div[class^="autocomplete"] {
 code,
 code * {
 	font-family: Roboto Mono !important;
+}
+
+/* make edits more conspicuous */
+.edited-DL9ECl {
+	color: var(--yellow) !important;
 }
 
 /* mark unread channels bold */
