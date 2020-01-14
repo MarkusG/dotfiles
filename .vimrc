@@ -5,7 +5,7 @@ set hlsearch
 set number relativenumber
 set nu rnu
 set smartindent
-set tabstop=8
+set tabstop=4
 set shiftwidth=4
 
 " smart case
