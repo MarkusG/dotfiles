@@ -63,6 +63,12 @@ syntax on
 map j gj
 map k gk
 
+" latex
+filetype plugin indent on
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
+set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -74,6 +80,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
 Plugin 'lilydjwg/colorizer'
 Plugin 'rhysd/committia.vim'
+
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 Plugin 'SirVer/ultisnips' " snippet engine
 Plugin 'honza/vim-snippets' " snippets
