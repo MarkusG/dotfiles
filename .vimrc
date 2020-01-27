@@ -63,6 +63,10 @@ syntax on
 map j gj
 map k gk
 
+" execute project-specific vimrc
+set exrc
+set secure
+
 " latex
 filetype plugin indent on
 set grepprg=grep\ -nH\ $*
