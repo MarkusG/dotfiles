@@ -54,8 +54,9 @@ div[class^="autocomplete"] {
 	border-right: 2px solid var(--grey) !important;
 }
 
-/* voice chat status border */
+/* voice chat status border and background */
 .panels-j1Uci_ {
+	background-color: var(--background-primary) !important;
 	border-top: 2px solid var(--grey) !important;
 }
 
