@@ -28,6 +28,10 @@ div[class^="autocomplete"] {
 	background-color: var(--background-primary) !important;
 }
 
+.systemPad-3UxEGl {
+	background-color: var(--background-primary) !important;
+}
+
 /* user popout backgrounds */
 .userPopout-3XzG_A * {
 	background-color: var(--background-primary) !important;
