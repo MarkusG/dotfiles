@@ -19,6 +19,11 @@
   --yellow: #f7ca88 !important;
 }
 
+div[class*="messageContent"],
+div[class^="messages"] div div h2 span[class^=username] {
+	font-size: 14pt;
+}
+
 /* some colors still don't use variables */
 .container-3gCOGc {
 	background-color: var(--background-primary) !important;
