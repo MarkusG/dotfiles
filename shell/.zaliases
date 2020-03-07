@@ -1,6 +1,6 @@
 alias ytdl-rip='youtube-dl --extract-audio --audio-format mp3'
 alias ls='ls --color=auto'
-alias ll='ls -lAh --color=auto'
+alias ll='ls -lAh --group-directories-first --color=auto'
 alias pacman='pacman --color always'
 alias htop='htop -d 10'
 alias pacaur='pacaur --color always'
