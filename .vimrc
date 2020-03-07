@@ -107,6 +107,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 Plugin 'mhinz/vim-startify' " neat start menu
 let g:startify_files_number = 40
 
+Plugin 'vimwiki/vimwiki'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'michal-h21/vim-zettel'
+
 " syntastic
 Plugin 'vim-syntastic/syntastic'
 set statusline+=%#warningmsg#
