@@ -125,9 +125,9 @@ div[class*="quickswitcher"] div[class*="input"] {
 }
 
 /* hide guild navigator */
-.base-3dtUhz {
-	left: 0px !important;
-}
+/* .base-3dtUhz { */
+/* 	left: 0px !important; */
+/* } */
 
 /* hide message box buttons */
 .buttons-205you {
