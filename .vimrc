@@ -8,6 +8,9 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 
+" make my code nice and slim
+set colorcolumn=80
+
 " smart case
 set ignorecase
 set smartcase
