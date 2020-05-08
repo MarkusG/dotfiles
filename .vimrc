@@ -57,6 +57,9 @@ cnoreabbrev Qa qa
 nnoremap H gT
 nnoremap L gt
 
+" better multiline pasting
+nnoremap p gP
+
 "tab management with t leader
 nnoremap tn :tabnew<CR>
 nnoremap tq :tabclose<CR>
