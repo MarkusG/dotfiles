@@ -87,6 +87,7 @@ bindsym Mod4+d exec rofi -show run
 bindsym Mod4+Tab exec rofi -show window
 bindsym Mod4+Shift+d exec rofi-emoji
 bindsym Mod4+Shift+m exec macropad
+bindsym Mod4+c exec rofi -show calc -modi calc -no-show-match -no-sort
 
 # media keys
 bindsym XF86AudioPrev exec playerctl previous 
