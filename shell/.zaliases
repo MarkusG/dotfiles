@@ -25,8 +25,8 @@ devenv() {
 	if [[ -n "$1" ]]; then
 		cd $1
 	fi
-	i3-msg append_layout ~/.config/i3/dev-workspace.json
-	for i in {0..2}; do
+	i3-msg append_layout ~/dotfiles/i3/dev-workspace.json
+	for i in {0..3}; do
 		termite & disown
 	done
 	exit
