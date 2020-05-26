@@ -20,6 +20,10 @@ alias ssh='TERM=xterm ssh'
 alias cll='ls -la --color=never'
 alias todo='cat ~/todo.txt'
 alias kdec='kdeconnect-cli -d 1320b564ac06faf5'
+alias makegdbwork='echo "echo 0 > /proc/sys/kernel/yama/ptrace_scope" | sudo -i'
+
+# suffix aliases
+alias -s {c,h,cpp,hpp,build,rs,cs,csproj,js,json,toml,config,sh}=vim
 
 devenv() {
 	if [[ -n "$1" ]]; then
