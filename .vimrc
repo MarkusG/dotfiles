@@ -88,15 +88,15 @@ Plugin 'tpope/vim-commentary'
 Plugin 'lilydjwg/colorizer'
 Plugin 'rhysd/committia.vim'
 
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+Plugin 'ycm-core/YouCompleteMe'
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_key_list_select_completion = ['<TAB>', '<Enter>' ]
+let g:ycm_key_list_previous_completion = []
 
 Plugin 'SirVer/ultisnips' " snippet engine
 Plugin 'honza/vim-snippets' " snippets
 " snippets: trigger config
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<s-tab>"
 
 Plugin 'airblade/vim-gitgutter' " show changes in vim
 Plugin 'chrisbra/Colorizer' " color hex codes accordingly
@@ -113,7 +113,6 @@ let g:startify_files_number = 40
 Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
-Plugin 'michal-h21/vim-zettel'
 
 " syntastic
 Plugin 'vim-syntastic/syntastic'
