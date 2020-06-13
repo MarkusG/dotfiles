@@ -90,7 +90,7 @@ Plugin 'rhysd/committia.vim'
 
 Plugin 'ycm-core/YouCompleteMe'
 let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_key_list_select_completion = ['<TAB>', '<Enter>' ]
+let g:ycm_key_list_select_completion = ['<Tab>']
 let g:ycm_key_list_previous_completion = []
 
 Plugin 'SirVer/ultisnips' " snippet engine
