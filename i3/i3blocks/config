@@ -27,6 +27,7 @@
 # command=/usr/lib/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
+SCRIPT_DIR=/home/mark/.config/i3blocks/blocklets
 
 # Volume indicator
 #
@@ -43,7 +44,6 @@ markup=none
 
 # Now playing
 [nowplaying]
-label= 
 command=~/dotfiles/bin/now-playing
 interval=1
 color=#93a1a1
@@ -59,8 +59,7 @@ color=#93a1a1
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-command=$SCRIPT_DIR/memory
-label= 
+command=$SCRIPT_DIR/memory/memory
 separator=true
 interval=5
 color=#93a1a1
@@ -71,8 +70,7 @@ color=#93a1a1
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [temperature]
-command=$SCRIPT_DIR/temperature
-label= 
+command=$SCRIPT_DIR/temperature/temperature
 interval=1
 color=#93a1a1
 
@@ -82,14 +80,13 @@ color=#93a1a1
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-command=$SCRIPT_DIR/disk
-label= 
+command=$SCRIPT_DIR/disk/disk
 #instance=/mnt/data
 interval=30
 color=#93a1a1
 
 [disk-io]
-command=$SCRIPT_DIR/disk-io
+command=$SCRIPT_DIR/disk-io/disk-io
 interval=1
 color=#93a1a1
 
@@ -98,7 +95,7 @@ color=#93a1a1
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
-command=$SCRIPT_DIR/iface
+command=$SCRIPT_DIR/iface/iface
 #instance=wlan0
 color=#93a1a1
 interval=10
@@ -115,7 +112,7 @@ separator=true
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
-command=$SCRIPT_DIR/cpu_usage
+command=$SCRIPT_DIR/cpu_usage/cpu_usage
 label=CPU
 interval=10
 min_width=CPU: 100.00%
