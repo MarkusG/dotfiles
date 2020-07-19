@@ -81,6 +81,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " plugins
+Plugin 'tek256/simple-dark'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
