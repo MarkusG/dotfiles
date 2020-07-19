@@ -223,6 +223,7 @@ assign [class="TeamSpeak 3"] $w1
 
 # specific window rules
 for_window [class="Extcalc"] floating enable
+for_window [instance="origin.exe"] floating enable
 for_window [class="Minecraft .*"] fullscreen enable
 for_window [class="EtG.x86_64"] fullscreen enable
 
