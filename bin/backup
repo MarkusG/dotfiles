@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rsync -vaz /hdd/ /run/media/mark/Mark-External/hdd/ --delete
+rsync -vaz /home/ /run/media/mark/Mark-External/home/ --delete \
+	--exclude '.cache' \
+	--exclude '.cargo' \
+	--exclude '.electron-gyp' \
+	--exclude '.gradle' \
+	--exclude '.lutris' \
+	--exclude '.npm' \
+	--exclude 'node_modules'

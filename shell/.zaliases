@@ -42,11 +42,23 @@ splay() {
 	playerctl -p spotify open "$uri"
 }
 
-scratch () {
+scratch() {
     if [ -z "$1" ]
     then
         vim ~/.scratch
     else
         vim ~/.scratch.d/$1
     fi
+}
+
+mendf() {
+	e="$(mend le | cut -d' ' -f 2- | fzf)"; mend s "$e"
+}
+
+hevc-encode() {
+	ffmpeg -i "$1" -c:v libx265 -crf 28 -c:a aac -b:a 128k "$2"
+}
+
+flatten() {
+	mv "$1"/* . && rm -r "$1"
 }

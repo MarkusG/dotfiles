@@ -50,6 +50,9 @@ exec_always --no-startup-id feh --bg-fill ~/wallpaper/current
 # xcompmgr
 exec xcompmgr -D 5 -f
 
+# for some reason this isn't running in my shell profile
+exec ~/.screenlayout/layout.sh
+
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up k
@@ -80,7 +83,7 @@ bindsym Print mode "screenshot"
 # kill focused window
 bindsym Mod4+Shift+q kill
 
-bindsym $mod+Control+l exec i3lock -ti wallpaper/lock
+bindsym $mod+Control+l exec ~/bin/i3-scripts/lock
 
 # launch
 bindsym Mod4+d exec rofi -show run
@@ -176,8 +179,8 @@ set $w9 9
 set $w10 10
 
 # display variables
-set $maindisp DVI-D-0
-set $leftdisp DVI-I-1
+set $maindisp DP-1
+set $leftdisp DP-2
 
 # switch to workspace
 bindsym Mod4+1 workspace $w1
@@ -235,6 +238,7 @@ gaps inner 8
 smart_gaps on
 
 # autoruns
+exec --no-startup-id redshift -l 33:-117 &
 exec --no-startup-id discord
 exec --no-startup-id thunderbird
 exec --no-startup-id termite
