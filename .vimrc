@@ -36,8 +36,10 @@ endif
 
 " dont make comments so sticky
 set formatoptions-=r
+
 " lists
 set formatoptions+=n
+
 " comments on line joins
 set formatoptions+=j
 
@@ -62,6 +64,7 @@ nnoremap tn :tabnew<CR>
 nnoremap tq :tabclose<CR>
 
 syntax on
+
 " move through wrapped lines as if they were individual lines
 map j gj
 map k gk
@@ -70,61 +73,44 @@ map k gk
 set exrc
 set secure
 
-" latex
-filetype plugin indent on
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"
-set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
 " plugins
-Plugin 'tek256/simple-dark'
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-commentary'
-Plugin 'lilydjwg/colorizer'
-Plugin 'rhysd/committia.vim'
+call plug#begin('~/.vim/plugged')
+" commands to surround things with punctuation e.g. parentheses
+Plug 'tpope/vim-surround'
+" commands comment out lines and regions
+Plug 'tpope/vim-commentary'
+" colorize hex codes and other color specifications
+Plug 'lilydjwg/colorizer'
+" display commit contents and diffs while writing commit messages
+Plug 'rhysd/committia.vim'
+" grab bag of latex improvements
+Plug 'lervag/vimtex'
 
-Plugin 'ycm-core/YouCompleteMe'
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_key_list_select_completion = ['<Tab>']
-let g:ycm_key_list_previous_completion = []
+" completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-Plugin 'SirVer/ultisnips' " snippet engine
-Plugin 'honza/vim-snippets' " snippets
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" snippet engine
+Plug 'SirVer/ultisnips'
+" snippet collection
+Plug 'honza/vim-snippets'
 " snippets: trigger config
 let g:UltiSnipsExpandTrigger="<s-tab>"
+" show changed lines
+Plug 'airblade/vim-gitgutter'
 
-Plugin 'airblade/vim-gitgutter' " show changes in vim
-Plugin 'chrisbra/Colorizer' " color hex codes accordingly
+call plug#end()
 
-Plugin 'scrooloose/nerdtree' " file tree
-nnoremap <C-t> :NERDTree<CR>
-let g:NERDTreeShowHidden=1
-let g:NERDTreeSortHiddenFirst=1
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " autoclose
-
-Plugin 'mhinz/vim-startify' " neat start menu
-let g:startify_files_number = 40
-
-Plugin 'vimwiki/vimwiki'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-
-" syntastic
-Plugin 'vim-syntastic/syntastic'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-call vundle#end()
 filetype plugin indent on
