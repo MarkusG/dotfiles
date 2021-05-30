@@ -281,7 +281,7 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
 	mode hide
-	position top
+	position bottom
 	tray_output none
 	status_command SCRIPT_DIR=~/.config/i3blocks/blocklets i3blocks
 	colors {
