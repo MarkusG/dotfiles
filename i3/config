@@ -96,6 +96,7 @@ bindsym Mod4+c exec rofi -show calc -modi calc -no-show-match -no-sort
 bindsym XF86AudioPrev exec playerctl -p spotify previous 
 bindsym XF86AudioNext exec playerctl -p spotify next 
 bindsym XF86AudioPlay exec playerctl -p spotify play-pause 
+bindsym XF86AudioMute exec playerctl -p spotify play-pause 
 bindsym XF86AudioLowerVolume exec playerctl -p spotify volume +
 bindsym XF86AudioRaiseVolume exec playerctl -p spotify volume -
 bindsym XF86AudioStop exec playerctl -p spotify stop
