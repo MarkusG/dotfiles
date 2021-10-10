@@ -69,10 +69,10 @@ bindsym Mod4+Return exec termite
 
 # screenshot
 mode "screenshot" {
-	bindsym Print exec shshare --type screenshot --selection full --destination upload --wait .5; mode "default"
-	bindsym r exec shshare --type screenshot --selection region --destination upload; mode "default"
-	bindsym w exec shshare --type screenshot --selection focused --destination upload; mode "default"
-	bindsym c exec shshare --type screencast --selection region --destination upload; mode "default"
+	bindsym Print exec shshare --type screenshot --selection full --destination clipboard --wait .5; mode "default"
+	bindsym r exec shshare --type screenshot --selection region --destination clipboard; mode "default"
+	bindsym w exec shshare --type screenshot --selection focused --destination clipboard; mode "default"
+	bindsym c exec shshare --type screencast --selection region --destination clipboard; mode "default"
 	bindsym d exec shshare --stop-screencast; mode "default"
 
 	bindsym Escape mode "default"
