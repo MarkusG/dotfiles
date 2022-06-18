@@ -19,7 +19,15 @@
   --yellow: #f7ca88 !important;
 }
 
-.peopleColumn-29fq28 {
+.container-YkUktl {
+	background-color: var(--background-primary) !important;
+}
+
+.container-1zzFcN {
+	background-color: var(--background-primary) !important;
+}
+
+.peopleColumn-1wMU14 {
 	background-color: var(--background-primary) !important;
 }
 
@@ -103,7 +111,7 @@ code * {
 }
 
 /* if you want a feature done right you have to implement it yourself */
-div[class^='messageGroupBlocked'] {
+div[class^='blockedSystemMessage'] {
 	display: none !important;
 }
 
