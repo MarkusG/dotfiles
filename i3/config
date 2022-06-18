@@ -65,7 +65,7 @@ set $mod Mod4
 floating_modifier Mod4
 
 # start a terminal
-bindsym Mod4+Return exec termite
+bindsym Mod4+Return exec i3-sensible-terminal
 
 # screenshot
 mode "screenshot" {
@@ -93,13 +93,16 @@ bindsym Mod4+Shift+m exec macropad
 bindsym Mod4+c exec rofi -show calc -modi calc -no-show-match -no-sort
 
 # media keys
-bindsym XF86AudioPrev exec playerctl -p spotify previous 
-bindsym XF86AudioNext exec playerctl -p spotify next 
-bindsym XF86AudioPlay exec playerctl -p spotify play-pause 
-bindsym XF86AudioMute exec playerctl -p spotify play-pause 
-bindsym XF86AudioLowerVolume exec playerctl -p spotify previous
-bindsym XF86AudioRaiseVolume exec playerctl -p spotify next
-bindsym XF86AudioStop exec playerctl -p spotify stop
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext exec playerctl next 
+bindsym XF86AudioPlay exec playerctl play-pause 
+bindsym XF86AudioMute exec playerctl play-pause 
+bindsym XF86AudioLowerVolume exec playerctl previous
+bindsym XF86AudioRaiseVolume exec playerctl next
+bindsym XF86AudioStop exec playerctl stop
+
+# mic mute toggle
+bindsym XF86Calculator exec pactl set-source-mute alsa_input.usb-BurrBrown_from_Texas_Instruments_USB_AUDIO_CODEC-00.analog-stereo toggle
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -142,11 +145,6 @@ bindsym Mod4+s mode "split"
 
 # enter fullscreen mode for the focused container
 bindsym Mod4+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-# bindsym Mod4+s layout stacking
-bindsym Mod4+w layout tabbed
-bindsym Mod4+Control+e layout toggle split
 
 # toggle tiling / floating
 bindsym Mod4+Shift+space floating toggle
