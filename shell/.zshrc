@@ -10,7 +10,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' rehash true
 setopt COMPLETE_ALIASES
 
-fpath=( "$HOME/.zfunctions" $fpath)
+fpath+=($HOME/.zsh/pure)
 
 autoload -Uz compinit promptinit
 promptinit
