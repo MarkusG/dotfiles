@@ -54,8 +54,7 @@ bindsym XF86AudioRaiseVolume exec playerctyl volume -
 bindsym XF86AudioStop exec playerctl stop
 
 # lock
-bindsym Control+$mod+L exec bin/lock
-bindsym Control+Shift+L exec bin/lock-and-sleep
+bindsym Control+$mod+L exec ~/bin/lock
 
 # light
 bindsym XF86MonBrightnessUp exec light -A 10
