@@ -23,6 +23,7 @@ alias kdec='kdeconnect-cli -d 1320b564ac06faf5'
 alias makegdbwork='echo "echo 0 > /proc/sys/kernel/yama/ptrace_scope" | sudo -i'
 alias imgclip='xclip -selection clipboard -target image/png'
 alias ocr='maim -s | tesseract - - | xclip -selection clipboard'
+alias v='nvim'
 
 # suffix aliases
 alias -s {c,h,cpp,hpp,build,rs,cs,csproj,js,json,toml,config}=vim
