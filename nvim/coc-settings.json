@@ -1,0 +1,4 @@
+{
+	"rust-analyzer.serverPath": "/usr/bin/rust-analyzer",
+	"rust-analyzer.hover.documentation.enable": true
+}
