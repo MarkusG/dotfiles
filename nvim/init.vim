@@ -11,6 +11,9 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 call plug#end()
 
+set expandtab
+set shiftwidth=4
+
 set number relativenumber
 set colorcolumn=80
 
