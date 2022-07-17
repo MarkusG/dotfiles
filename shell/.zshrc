@@ -52,4 +52,4 @@ alias sudo='sudo '
 # make gpg work with git and ssh
 export GPG_TTY=$(tty)
 
-export EDITOR=vim
+export EDITOR=nvim
