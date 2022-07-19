@@ -44,6 +44,9 @@ if [[ "$TERM" == (screen*|xterm*|rxvt*) ]]; then
 	add-zsh-hook -Uz preexec xterm_title_preexec
 fi
 
+[ -e ~/.dircolors ] && eval $(dircolors -b ~/.dircolors) ||
+    eval $(dircolors -b)
+
 source ~/.zaliases
 
 # Make sudo recognize aliases
