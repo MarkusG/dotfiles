@@ -1,0 +1,13 @@
+#!/bin/bash
+region=$(slop --format="%x,%y %wx%h" 2>/dev/null)
+[[ $? -eq 1 ]] && exit 1
+size=$(echo "$region" | cut -d' ' -f 2)
+offset=$(echo "$region" | cut -d' ' -f 1)
+ffmpeg \
+    -video_size "$size" \
+    -framerate 60 \
+    -f x11grab \
+    -i :0.0+$offset \
+    -pix_fmt yuv420p \
+    -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" \
+    /tmp/screencast.mp4
