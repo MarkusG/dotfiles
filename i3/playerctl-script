@@ -1,0 +1,3 @@
+#!/bin/bash
+# this exists because i3's configuration is a massive 8th amendment issue
+playerctl --player=spotify,cmus $1

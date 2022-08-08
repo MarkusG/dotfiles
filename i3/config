@@ -93,13 +93,13 @@ bindsym Mod4+Shift+m exec macropad
 bindsym Mod4+c exec rofi -show calc -modi calc -no-show-match -no-sort
 
 # media keys
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioNext exec playerctl next 
-bindsym XF86AudioPlay exec playerctl play-pause 
-bindsym XF86AudioMute exec playerctl play-pause 
-bindsym XF86AudioLowerVolume exec playerctl previous
-bindsym XF86AudioRaiseVolume exec playerctl next
-bindsym XF86AudioStop exec playerctl stop
+bindsym XF86AudioPrev exec ~/dotfiles/i3/playerctl-script previous
+bindsym XF86AudioNext exec ~/dotfiles/i3/playerctl-script next
+bindsym XF86AudioPlay exec ~/dotfiles/i3/playerctl-script play-pause
+bindsym XF86AudioMute exec ~/dotfiles/i3/playerctl-script play-pause
+bindsym XF86AudioLowerVolume exec ~/dotfiles/i3/playerctl-script previous
+bindsym XF86AudioRaiseVolume exec ~/dotfiles/i3/playerctl-script next
+bindsym XF86AudioStop exec ~/dotfiles/i3/playerctl-script stop
 
 # mic mute toggle
 bindsym XF86Calculator exec pactl set-source-mute alsa_input.usb-BurrBrown_from_Texas_Instruments_USB_AUDIO_CODEC-00.analog-stereo toggle
