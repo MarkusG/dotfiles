@@ -45,12 +45,13 @@ for_window [class="^.*"] border pixel 0
 gaps inner 8
 smart_gaps on
 
-# media
-bindsym XF86AudioPrev exec playerctl previous 
+# media keys
+bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioNext exec playerctl next 
 bindsym XF86AudioPlay exec playerctl play-pause 
-bindsym XF86AudioLowerVolume exec playerctl volume +
-bindsym XF86AudioRaiseVolume exec playerctyl volume -
+bindsym XF86AudioMute exec playerctl play-pause 
+bindsym XF86AudioLowerVolume exec playerctl previous
+bindsym XF86AudioRaiseVolume exec playerctl next
 bindsym XF86AudioStop exec playerctl stop
 
 # lock
@@ -200,6 +201,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	position top
+        tray_output none
 		status_command i3status
 		colors {
 			background			$gray
