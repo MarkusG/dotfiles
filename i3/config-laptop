@@ -35,7 +35,7 @@ floating_modifier $mod
 
 # autoruns
 exec --no-startup-id redshift -l 33:-117
-exec --no-startup-id compton -b
+exec --no-startup-id picom -i 1
 
 # wallpaper
 # exec feh --bg-fill ~/wallpaper/arch-logo.jpg
