@@ -38,7 +38,7 @@ exec --no-startup-id redshift -l 33:-117
 exec --no-startup-id picom -i 1
 
 # wallpaper
-# exec feh --bg-fill ~/wallpaper/arch-logo.jpg
+exec feh --bg-fill ~/wallpaper/current
 
 # gaps / remove title bars
 for_window [class="^.*"] border pixel 0
