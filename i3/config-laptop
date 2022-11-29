@@ -56,6 +56,7 @@ bindsym XF86AudioStop exec "playerctl --player=spotify,cmus stop"
 
 # lock
 bindsym Control+$mod+L exec ~/bin/lock
+bindsym Control+Shift+$mod+L exec ~/bin/lock sleep
 
 # light
 bindsym XF86MonBrightnessUp exec light -A 10
