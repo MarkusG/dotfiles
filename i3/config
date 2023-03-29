@@ -136,6 +136,7 @@ bindsym Mod4+Shift+Right move right
 mode "split" {
 	bindsym h split h; mode "default"
 	bindsym v split v; mode "default"
+	bindsym t split toggle, layout tabbed; mode "default"
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
