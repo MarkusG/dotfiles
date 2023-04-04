@@ -1,8 +1,26 @@
 call plug#begin()
 
+Plug 'freddiehaddad/base16-nvim'
+
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'rhysd/committia.vim'
+
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+    ensure_installed = { "c", "rust", "lua", "vim", "vimdoc", "query" },
+
+    sync_install = false,
+
+    auto_install = true,
+
+    highlight = {
+        enable = true,
+            additional_vim_regex_highlighting = false,
+    },
+}
+EOF
 
 Plug 'mhinz/vim-signify'
 set updatetime=300
@@ -31,6 +49,18 @@ function! CheckBackspace() abort
 endfunction
 
 call plug#end()
+
+" set colorscheme and highlights
+colorscheme base16-default-dark
+hi TabLine ctermfg=White ctermbg=Black
+hi TabLineFill ctermfg=White ctermbg=Black
+hi TabLineSel ctermfg=Black ctermbg=White
+hi StatusLine ctermfg=White ctermbg=Black
+hi ColorColumn ctermbg=DarkGray
+hi LineNrAbove ctermfg=DarkGray
+hi LineNr ctermfg=White
+hi LineNrBelow ctermfg=DarkGray
+hi Comment ctermfg=Gray
 
 set expandtab
 set shiftwidth=4
