@@ -1,11 +1,17 @@
 #!/bin/bash
 
-rsync -vaz /hdd/ /run/media/mark/Mark-External/hdd/ --delete
-rsync -vaz /home/ /run/media/mark/Mark-External/home/ --delete \
+echo 'hey remember to check out rdiff-backup'
+
+rsync -va /hdd/ /run/media/mark/Mark-External/hdd/ --delete
+rsync -va /home/ /run/media/mark/Mark-External/home/ --delete \
 	--exclude '.cache' \
 	--exclude '.cargo' \
 	--exclude '.electron-gyp' \
 	--exclude '.gradle' \
 	--exclude '.lutris' \
+	--exclude '.local/share/Steam' \
+	--exclude 'git/aur' \
+	--exclude 'VirtualBox VMs' \
+	--exclude 'vms' \
 	--exclude '.npm' \
 	--exclude 'node_modules'
