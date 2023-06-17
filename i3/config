@@ -179,8 +179,8 @@ set $w9 9
 set $w10 10
 
 # display variables
-set $maindisp DP-1
-set $leftdisp DP-2
+set $maindisp DP-2
+set $leftdisp DP-1
 
 # switch to workspace
 bindsym Mod4+1 workspace $w1
@@ -213,16 +213,8 @@ bindsym Mod4+Shift+Control+Right move workspace to output right
 # workspace display assignments
 workspace $w1 output $leftdisp
 workspace $w2 output $maindisp
-workspace $w6 output $leftdisp
 workspace $w3 output $maindisp
-workspace $w5 output $leftdsip
-
-# window assignments
-assign [class=discord] $w1
-assign [class=Steam]   $w4
-assign [class=spotify] $w5
-assign [class=Thunderbird] $w6
-assign [class="TeamSpeak 3"] $w1
+workspace $w6 output $leftdisp
 
 # specific window rules
 for_window [class="Extcalc"] floating enable
@@ -237,13 +229,18 @@ for_window [class="^.*"] border pixel 0
 gaps inner 8
 smart_gaps on
 
+# layout
+exec --no-startup-id i3-msg "workspace $w1; append_layout /home/mark/dotfiles/i3/comms.json"
+exec --no-startup-id i3-msg "workspace $w2; append_layout /home/mark/dotfiles/i3/terminals.json"
+exec --no-startup-id i3-msg "workspace $w3; append_layout /home/mark/dotfiles/i3/firefox.json"
+exec --no-startup-id i3-msg "workspace $w6; append_layout /home/mark/dotfiles/i3/mail.json"
+
 # autoruns
 exec --no-startup-id redshift -l 33:-117 &
 exec --no-startup-id discord
 exec --no-startup-id thunderbird
 exec --no-startup-id alacritty
 exec --no-startup-id firefox
-for_window [class=firefox] move workspace $w3
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
