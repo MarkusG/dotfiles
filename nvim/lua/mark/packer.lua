@@ -9,6 +9,11 @@ return require('packer').startup(function(use)
     use 'rhysd/committia.vim'
     use 'mhinz/vim-signify'
 
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         requires = { { 'nvim-lua/plenary.nvim' } }
