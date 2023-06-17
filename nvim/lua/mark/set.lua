@@ -22,3 +22,5 @@ vim.opt.incsearch = true
 vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
+
+vim.cmd('set rtp^="/home/mark/.opam/cs3110/share/ocp-indent/vim"')
