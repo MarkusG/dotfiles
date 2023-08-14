@@ -15,4 +15,10 @@ lsp.setup_nvim_cmp({
     mapping = cmp_mappings
 })
 
+lsp.on_attach(function(client, bufnr)
+    local opts = { buffer = bufnr, remap = false }
+
+    vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
+end)
+
 lsp.setup()
