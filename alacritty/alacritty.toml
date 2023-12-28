@@ -1,0 +1,50 @@
+[colors.bright]
+black = "#585858"
+blue = "#7cafc2"
+cyan = "#86c1b9"
+green = "#a1b56c"
+magenta = "#ba8baf"
+red = "#ab4642"
+white = "#f8f8f8"
+yellow = "#f7ca88"
+
+[colors.cursor]
+cursor = "#d8d8d8"
+text = "#d8d8d8"
+
+[colors.normal]
+black = "#181818"
+blue = "#7cafc2"
+cyan = "#86c1b9"
+green = "#a1b56c"
+magenta = "#ba8baf"
+red = "#ab4642"
+white = "#d8d8d8"
+yellow = "#f7ca88"
+
+[colors.primary]
+background = "#181818"
+foreground = "#d8d8d8"
+
+[font]
+size = 7
+
+[font.bold]
+family = "Hack"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack"
+style = "Italic"
+
+[font.normal]
+family = "Hack"
+style = "Regular"
+
+[window.padding]
+x = 8
+y = 8
