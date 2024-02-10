@@ -59,3 +59,5 @@ export EDITOR=nvim
 
 # opam configuration
 [[ ! -r /home/mark/.opam/opam-init/init.zsh ]] || source /home/mark/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+task
