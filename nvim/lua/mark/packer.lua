@@ -9,6 +9,8 @@ return require('packer').startup(function(use)
     use 'rhysd/committia.vim'
     use 'mhinz/vim-signify'
 
+    use 'vimwiki/vimwiki'
+
     use({
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
