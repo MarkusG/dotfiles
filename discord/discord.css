@@ -149,3 +149,7 @@ div[class*="quickswitcher"] div[class*="input"] {
 .buttons-205you {
 	display: none !important;
 }
+
+div[class^="chat"] {
+	background-color: var(--background-primary) !important;
+}
