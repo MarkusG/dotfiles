@@ -25,6 +25,12 @@ alias imgclip='xclip -selection clipboard -target image/png'
 alias ocr='maim -s | tesseract - - | xclip -selection clipboard'
 alias v='nvim'
 
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gca='git commit --amend --no-edit'
+alias gp='git push'
+
 # suffix aliases
 alias -s {c,h,cpp,hpp,build,rs,cs,csproj,js,json,toml,config}=vim
 
